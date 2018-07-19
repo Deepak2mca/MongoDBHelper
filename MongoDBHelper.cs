@@ -1,4 +1,4 @@
-using MongoDB.Driver;
+﻿using MongoDB.Driver;
 using System.Collections.Generic;
 using System.Linq;
 using MongoDB.Driver.Linq;
@@ -13,8 +13,8 @@ namespace ParkingService.Models
     public static class MongoDBHelper
     {
         
-        private static string connectionString = "mongodb+srv://User:password@cluster0-hfxr0.mongodb.net/test";
-        public static string DatabaseName { get { return "test"; } }       
+        private static string connectionString = "mongodb+srv://admin:admin@cluster0-hfxr5.mongodb.net/carparkdb";
+        public static string DatabaseName { get { return "carparkdb"; } }       
         private static MongoDatabase _database;
         public static MongoDatabase DB
         {
